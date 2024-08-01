@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 2px solid brown;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 10px;
+    /* margin-left: 200px; */
+
+}
+.annual{
+    margin-right: 400px;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+}
+.head img{
+    width: 100px;
+    height: 100px;
+}
+.section1{
+    text-align: center;
+}
+.hindu{
+    text-align: center;
+}
+.section2{
+    margin-left: 450px;
+    margin-top: 20px;
+}
+table{
+    width: 90%;
+    /* margin-left: -50px; */
+}
+
+table,th,td{
+    border: 1px solid rgb(200, 144, 32);
+    border-collapse: collapse;
+    font-size: large;
+    padding: 10px;
+   
+}
+.section3{
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.info-title{
+    color: red;
+    font-size: large;
+}
+#table1{
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: large;
+    text-align: center;
+    margin-left: 135px;
+    /* margin-top: 10px; */
+    width: 80%;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.date{
+    text-align: left;
+}
+.sign{
+    text-align: end;
+}
+
