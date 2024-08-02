@@ -1,36 +1,141 @@
+let sum1 = 0;
+let sum2 = 0;
+let  sum3 = 0;
+let sum4 = 0;
+let sum5 = 0;
+let sum6 = 0;
+
 function add1(){
-    const val1=document.getElementById("val1").value;
-    const val2=document.getElementById("val2").value;
-    const res1=document.getElementById("res1");
-    res1.innerHTML=Number(val1)+Number(val2);
+    let n1 = document.getElementById('val1').value;
+    let n2 = document.getElementById('val2').value;
+    if(n1 > 90){
+        alert("Theory mark should be less than 90");
+        document.getElementById('val1').value = "";
+        return;
+    }
+    if(n2 > 10){
+        alert("Practical mark should be less than 10");
+        document.getElementById('val2').value = "";
+        return;
+    }
+    sum1 = Number(n1)+Number(n2);
+    document.getElementsByClassName('tot-1')[0].innerHTML = Number(n1)+Number(n2);
 }
 function add2(){
-    const val3=document.getElementById("val3").value;
-    const val4=document.getElementById("val4").value;
-    const res2=document.getElementById("res2");
-    res2.innerHTML=Number(val3)+Number(val4);
+    let n1 = document.getElementById('val3').value;
+    let n2 = document.getElementById('val4').value;
+    if(n1 > 90){
+        alert("Theory mark should be less than 90");
+        document.getElementById('val1').value = "";
+        return;
+    }
+    if(n2 > 10){
+        alert("Practical mark should be less than 10");
+        document.getElementById('val2').value = "";
+        return;
+    }
+    sum2 = Number(n1)+Number(n2);
+    document.getElementsByClassName('tot-2')[0].innerHTML = Number(n1)+Number(n2);
 }
 function add3(){
-    const val5=document.getElementById("val5").value;
-    const val6=document.getElementById("val6").value;
-    const res3=document.getElementById("res3");
-    res3.innerHTML=Number(val5)+Number(val6);
+    let n1 = document.getElementById('val5').value;
+    let n2 = document.getElementById('val6').value;
+    if(n1 > 90){
+        alert("Theory mark should be less than 90");
+        document.getElementById('val1').value = "";
+        return;
+    }
+    if(n2 > 10){
+        alert("Practical mark should be less than 10");
+        document.getElementById('val2').value = "";
+        return;
+    }
+    sum3 = Number(n1)+Number(n2);
+    document.getElementsByClassName('tot-3')[0].innerHTML = Number(n1)+Number(n2);
 }
 function add4(){
-    const val7=document.getElementById("val7").value;
-    const val8=document.getElementById("val8").value;
-    const res4=document.getElementById("res4");
-    res4.innerHTML=Number(val7)+Number(val8);
+    let n1 = document.getElementById('val7').value;
+    let n2 = document.getElementById('val8').value;
+    if(n1 > 90){
+        alert("Theory mark should be less than 90");
+        document.getElementById('val1').value = "";
+        return;
+    }
+    if(n2 > 10){
+        alert("Practical mark should be less than 10");
+        document.getElementById('val2').value = "";
+        return;
+    }
+    sum4 = Number(n1)+Number(n2);
+    document.getElementsByClassName('tot-4')[0].innerHTML = Number(n1)+Number(n2);
 }
 function add5(){
-    const val9=document.getElementById("val9").value;
-    const val10=document.getElementById("val10").value;
-    const res5=document.getElementById("res5");
-    res5.innerHTML=Number(val9)+Number(val10);
+    let n1 = document.getElementById('val9').value;
+    let n2 = document.getElementById('val10').value;
+    if(n1 > 90){
+        alert("Theory mark should be less than 90");
+        document.getElementById('val1').value = "";
+        return;
+    }
+    if(n2 > 10){
+        alert("Practical mark should be less than 10");
+        document.getElementById('val2').value = "";
+        return;
+    }
+    sum5 = Number(n1)+Number(n2);
+    document.getElementsByClassName('tot-5')[0].innerHTML = Number(n1)+Number(n2);
 }
 function add6(){
-    const val11=document.getElementById("val11").value;
-    const val12=document.getElementById("val12").value;
-    const res6=document.getElementById("res6");
-    res6.innerHTML=Number(val11)+Number(val12);
+    let n1 = document.getElementById('val11').value;
+    let n2 = document.getElementById('val12').value;
+    if(n1 > 90){
+        alert("Theory mark should be less than 90");
+        document.getElementById('val1').value = "";
+        return;
+    }
+    if(n2 > 10){
+        alert("Practical mark should be less than 10");
+        document.getElementById('val2').value = "";
+        return;
+    }
+    sum6 = Number(n1)+Number(n2);
+    document.getElementsByClassName('tot-6')[0].innerHTML = Number(n1)+Number(n2);
+    if(sum1 && sum2 && sum3 && sum4 && sum5 && sum6){
+                calculate();
+            }
+}
+
+function calculate() {
+    let total = sum1 + sum2 + sum3 + sum4 + sum5 + sum6;
+    document.getElementById('grand-tot').innerHTML = total;   
+    let percentage = (total/6)*100;
+    document.getElementById('percentage').innerHTML = percentage;
+    if(percentage > 50.0){
+        document.getElementById('result').innerHTML = "PASS"
+    }          
+    else{
+        document.getElementById('result').innerHTML = "FAIL"
+    }
+
+    let grade;
+    if(percentage > 90){
+        grade = "A+";
+    }
+    else if(percentage > 80){
+        grade = "A";
+    }
+    else if(percentage > 70){
+        grade = "B+";
+    }
+    else if(percentage > 60){
+        grade = "B";
+    }
+    else if(percentage > 50){
+        grade = "c"
+    }
+    else{
+        grade = "No Grade";
+    }
+
+    document.getElementById('grade').innerHTML = grade;
 }
