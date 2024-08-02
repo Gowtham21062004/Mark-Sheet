@@ -1,23 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 .container{
-    border: 2px solid brown;
+    border: 3px solid brown;
     margin: 0 auto;
-    width: 80vw;
+    width: 1000px;
     text-align: center;
     padding: 5px;
-    padding-bottom: 10px;
-    /* margin-left: 200px; */
+    background-color: #ffffcc
 
-}
-.annual{
-    margin-right: 400px;
 }
 .head{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .head img{
     width: 100px;
@@ -30,28 +27,28 @@
     text-align: center;
 }
 .section2{
-    margin-left: 450px;
-    margin-top: 20px;
+    text-align: center;
 }
 table{
-    width: 90%;
+    width: 100%;
     /* margin-left: -50px; */
 }
 
 table,th,td{
-    border: 1px solid rgb(200, 144, 32);
+    border: 2px solid rgb(18, 23, 20);
     border-collapse: collapse;
     font-size: large;
     padding: 10px;
+    background-color: #ffd1b3
    
 }
-.section3{
+.section3, .section4{
     text-align: center;
-    margin-left: 150px;
-    margin-top: 20px;
+    margin: 0 auto;
+    width: 80%;
 }
 .info-title{
-    color: red;
+    color: rgb(8, 3, 4);
     font-size: large;
 }
 #table1{
@@ -59,9 +56,9 @@ table,th,td{
     border-collapse: collapse;
     font-size: large;
     text-align: center;
-    margin-left: 135px;
-    /* margin-top: 10px; */
-    width: 80%;
+    margin: 20px auto;
+    width: 100%;
+    background-color: rgb(144, 233, 105);
 }
 .foot{
     display: flex;
@@ -73,5 +70,15 @@ table,th,td{
 }
 .sign{
     text-align: end;
+}
+.grand-total{
+    font-size: 25px;
+    text-align: left;
+}
+.input input{
+    width: 100%;
+    background-color: #fffafa;
+    outline: none;
+    border: none;
 }
 
